@@ -1,0 +1,12 @@
+Target,F1,Accuracy,Precision,Recall
+homeOwnersInsurance,1.0,1.0,1.0,1.0
+floodInsurance,0.98,0.9753086419753086,1.0,0.9607843137254902
+destroyed,1.0,1.0,1.0,1.0
+floodDamage,1.0,1.0,1.0,1.0
+roofDamage,1.0,1.0,1.0,1.0
+tsaEligible,1.0,1.0,1.0,1.0
+tsaCheckedIn,0.9896907216494846,0.9876543209876543,1.0,0.9795918367346939
+rentalAssistanceEligible,1.0,1.0,1.0,1.0
+repairAssistanceEligible,1.0,1.0,1.0,1.0
+replacementAssistanceEligible,1.0,1.0,1.0,1.0
+personalPropertyEligible,1.0,1.0,1.0,1.0
