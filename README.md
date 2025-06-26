@@ -112,6 +112,8 @@ Training involved:
 
 Model saving was performed per fold, allowing reuse and inference across experiments.
 
+![disaster_imapct_estimation_bert_model_schematic_diagram](https://github.com/user-attachments/assets/989f914d-3d8a-4a86-b379-1bc14392cafd)
+
 ---
 
 ### **Master Table: Model Performance Comparison (BERT Base with Multi-Head)**
