@@ -29,10 +29,10 @@ This ensures high-quality, localized disaster signal detection.
 
 ### Zip Code Classification
 
-To associate Twitter activity with FEMA targets, zip codes are assigned **positive** or **negative** labels:
+To associate Twitter activity with FEMA targets, zip codes are assigned **positive** or **negative** labels for each FEMA category:
 
-* **Positive Zip**: Contains at least one FEMA label with value 1 across its tweets.
-* **Negative Zip**: No FEMA-positive tweets within the zip.
+* **Positive Zip**: Contains at least one positive FEMA label with value 1.
+* **Negative Zip**: No FEMA-positive tweets within the zip code.
 
 These are later paired with aggregated tweet text for model training.
 
