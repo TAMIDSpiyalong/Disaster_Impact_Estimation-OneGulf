@@ -157,16 +157,8 @@ Experiments also included **"negative-only" inference** on storms like **Laura**
 
 ---
 
-## Evaluation
+## Visualization
 
-Each model's predictions were evaluated using:
-
-* **F1 Score (macro, micro, per label)**
-* **Precision & Recall**
-* **Multi-label Confusion Matrices**
-* **Cross-domain transfer accuracy**
-
-Visualization: 
 Given below are some of the few predicted targets that have been predicted using the above mentioned models.
 ![tsaEligible](https://github.com/user-attachments/assets/dd43cc98-6788-4da0-a8da-cd2cc807a2e8)
 ![tsaCheckedIn](https://github.com/user-attachments/assets/482d113a-8bcb-4657-9f68-91f0ea352a26)
