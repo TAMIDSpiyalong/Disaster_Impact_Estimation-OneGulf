@@ -12,8 +12,8 @@ The experiments simulate real-world deployment scenarios for rapid damage assess
 
 The dataset includes Twitter messages related to individual storm events. Each storm-specific dataset contains:
 
-* Raw tweet text
-* FEMA-target labels (multi-label binary annotations)
+* Raw tweet text https://data.griidc.org/data/O1.x158.000:0003 
+* FEMA-target labels https://data.griidc.org/data/O1.x158.000:0004
 * Optional geolocation data (e.g., zip code centroids, bounding boxes)
 * Disaster metadata
 
@@ -36,7 +36,7 @@ To associate Twitter activity with FEMA targets, zip codes are assigned **positi
 
 These are later paired with aggregated tweet text for model training.
 
-Each tweet may be labeled with multiple targets such as:
+Each tweet (from unique zipcode) may be labeled with multiple targets such as:
 
 * `homeOwnersInsurance`
 * `floodInsurance`
