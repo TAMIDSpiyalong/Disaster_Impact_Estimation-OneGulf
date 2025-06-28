@@ -12,8 +12,8 @@ The experiments simulate real-world deployment scenarios for rapid damage assess
 
 The dataset includes Twitter messages related to individual storm events. Each storm-specific dataset contains:
 
-* Raw tweet text
-* FEMA-target labels (multi-label binary annotations)
+* Raw tweet text https://data.griidc.org/data/O1.x158.000:0003 
+* FEMA-target labels https://data.griidc.org/data/O1.x158.000:0004
 * Optional geolocation data (e.g., zip code centroids, bounding boxes)
 * Disaster metadata
 
@@ -29,14 +29,14 @@ This ensures high-quality, localized disaster signal detection.
 
 ### Zip Code Classification
 
-To associate Twitter activity with FEMA targets, zip codes are assigned **positive** or **negative** labels:
+To associate Twitter activity with FEMA targets, zip codes are assigned **positive** or **negative** labels for each FEMA category:
 
-* **Positive Zip**: Contains at least one FEMA label with value 1 across its tweets.
-* **Negative Zip**: No FEMA-positive tweets within the zip.
+* **Positive Zip**: Contains at least one positive FEMA label with value 1.
+* **Negative Zip**: No FEMA-positive tweets within the zip code.
 
 These are later paired with aggregated tweet text for model training.
 
-Each tweet may be labeled with multiple targets such as:
+Each tweet (from unique zipcode) may be labeled with multiple targets such as:
 
 * `homeOwnersInsurance`
 * `floodInsurance`
@@ -157,16 +157,8 @@ Experiments also included **"negative-only" inference** on storms like **Laura**
 
 ---
 
-## Evaluation
+## Visualization
 
-Each model's predictions were evaluated using:
-
-* **F1 Score (macro, micro, per label)**
-* **Precision & Recall**
-* **Multi-label Confusion Matrices**
-* **Cross-domain transfer accuracy**
-
-Visualization: 
 Given below are some of the few predicted targets that have been predicted using the above mentioned models.
 ![tsaEligible](https://github.com/user-attachments/assets/dd43cc98-6788-4da0-a8da-cd2cc807a2e8)
 ![tsaCheckedIn](https://github.com/user-attachments/assets/482d113a-8bcb-4657-9f68-91f0ea352a26)
