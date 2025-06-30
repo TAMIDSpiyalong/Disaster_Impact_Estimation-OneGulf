@@ -31,12 +31,12 @@ This ensures high-quality, localized disaster signal detection.
 
 To associate Twitter activity with FEMA targets, zip codes are assigned **positive** or **negative** labels for each FEMA category:
 
-* **Positive Zip**: Contains at least one positive FEMA label with value 1.
-* **Negative Zip**: No FEMA-positive tweets within the zip code.
+* **Positive Zip**: Contains at least one positive FEMA label with value 1 (e.g., roof damage).
+* **Negative Zip**: No FEMA records (e.g., flood damage) within the zip code.
 
 These are later paired with aggregated tweet text for model training.
 
-Each tweet (from unique zipcode) may be labeled with multiple targets such as:
+Each tweet (from a unique zipcode) may be labeled with multiple targets, such as:
 
 * `homeOwnersInsurance`
 * `floodInsurance`
@@ -98,17 +98,8 @@ Longformer uses the same tokenizer and classification logic but benefits from sc
 
 Multiple architectures were explored, including:
 
-* **BERT-based Deep Multi-Head Classifier**: A custom model with one linear classification head per FEMA target, preceded by a shared BERT encoder and a dropout layer.
+* **BERT-based Deep Multi-Head Classifier**: A custom model with one classification head per FEMA target.
 * **Ensemble and Cross-Domain Models**: Evaluated the generalizability of models trained on one storm to others.
-
-Training involved:
-
-* 5-fold cross-validation
-* AdamW optimizer
-* Binary cross-entropy loss
-* Early stopping
-* Gradient accumulation
-* Optional mixed-precision training
 
 Model saving was performed per fold, allowing reuse and inference across experiments.
 
@@ -146,14 +137,12 @@ Model saving was performed per fold, allowing reuse and inference across experim
 
 ## Inference
 
-Inference pipelines were developed to:
+Inference pipelines were developed to predict on available social media datasets:
 
 * Load saved model checkpoints per fold
 * Tokenize new tweet batches
 * Run predictions and threshold output probabilities
 * Output results as CSVs containing predictions per FEMA target
-
-Experiments also included **"negative-only" inference** on storms like **Laura**, to simulate deployment where labels are unavailable but real-time classification is needed.
 
 ---
 
