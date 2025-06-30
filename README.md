@@ -159,11 +159,14 @@ Experiments also included **"negative-only" inference** on storms like **Laura**
 
 ## Visualization
 
-Given below are some of the few predicted targets that have been predicted using the above mentioned models.
+Given below are some of the prediction targets that have been predicted using the above mentioned models.
 
 ![flooddamage](https://github.com/TAMIDSpiyalong/Disaster_Impact_Estimation-OneGulf/blob/main/Harvey%20Flood%20Dmg.jpg)
 ![roofamage](https://github.com/TAMIDSpiyalong/Disaster_Impact_Estimation-OneGulf/blob/main/Harvey%20Roof%20Dmg.jpg)
 
+The ground-truth FEMA record visualization displays the total number of households for each category. 
+![flooddamage](https://github.com/TAMIDSpiyalong/Disaster_Impact_Estimation-OneGulf/blob/main/floodDamage.jpg)
+![roofamage](https://github.com/TAMIDSpiyalong/Disaster_Impact_Estimation-OneGulf/blob/main/roofDamage.jpg)
 
 ---
 
