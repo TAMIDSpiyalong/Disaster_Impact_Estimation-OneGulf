@@ -161,12 +161,9 @@ Experiments also included **"negative-only" inference** on storms like **Laura**
 
 Given below are some of the few predicted targets that have been predicted using the above mentioned models.
 
-![roofDamage](https://github.com/TAMIDSpiyalong/Disaster_Impact_Estimation-OneGulf/blob/main/Harvey%20Flood%20Dmg.jpg)
-![tsaEligible](https://github.com/user-attachments/assets/dd43cc98-6788-4da0-a8da-cd2cc807a2e8)
-![tsaCheckedIn](https://github.com/user-attachments/assets/482d113a-8bcb-4657-9f68-91f0ea352a26)
-![roofDamage](https://github.com/user-attachments/assets/17aec4ee-7713-4035-9cb0-57f1c159b87c)
-![rentalAssistanceEligible](https://github.com/user-attachments/assets/0fa0015f-b292-4c0a-b3e4-28e6224d0311)
-![homeDamage](https://github.com/user-attachments/assets/6c83cb3e-0c46-4c5a-b10a-08d9501109f0)
+![flooddamage](https://github.com/TAMIDSpiyalong/Disaster_Impact_Estimation-OneGulf/blob/main/Harvey%20Flood%20Dmg.jpg)
+![tsaEligible](https://github.com/TAMIDSpiyalong/Disaster_Impact_Estimation-OneGulf/blob/main/Harvey%20TSA%20Elig.jpg)
+![roofamage](https://github.com/TAMIDSpiyalong/Disaster_Impact_Estimation-OneGulf/blob/main/Harvey%20Roof%20Dmg.jpg)
 
 
 ---
