@@ -1,4 +1,4 @@
-# Disaster Impact Estimation - OneGulf (working in progress)
+# Disaster Impact Estimation - OneGulf
 
 ## Introduction
 
